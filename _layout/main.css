@@ -1,0 +1,133 @@
+/* Created XX April XXXX
+Last update April XX:  */
+
+:root {
+  --zI-1: 1;
+  --zI-2: 2;
+  --zI-3: 3;
+  --zI-4: 4;
+  --zI-5: 5;
+
+  /* --z-nav: var(--zI-2); 100 */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*--- General ---*/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(120deg, rgb(12, 12, 12), rgba(0, 0, 255, 0.644));
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(46, 46, 46);
+  font-size: 1.6rem;
+}
+
+h2 {
+  text-align: center;
+  margin: 1rem 0 2rem;
+}
+
+.container {
+  background-color: rgb(30, 30, 30);
+  box-shadow: 1px 2px 3px rgba(255, 255, 255, 0.275), 1px 2px 3px rgba(255, 255, 255, 0.275);
+  border-radius: 10px;
+  padding: 2rem;
+  width: 350px;
+  max-width: 100%;
+}
+
+.result-container {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.887);
+  color: black;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  align-items: center;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  height: 60px;
+  padding: 1.2rem 1rem;
+}
+
+.result-container .btn {
+  position: absolute;
+  right: 10px;
+  height: 35px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 5px;
+}
+
+.result-container .btn:active {
+  transform: scale(0.95);
+}
+
+.text {
+  bottom: -15px;
+  font-size: 1rem;
+  left: -1px;
+  text-transform: uppercase;
+  position: absolute;
+  color: #444;
+  font-weight: bold;
+}
+
+#result {
+  word-wrap: break-word;
+  max-width: calc(100% - 40px);
+  /* ESTE CALCULO HACE QUE NUNCA SE LLEGUE A TOCAR EL BOTON, ES EL 100% MENOS LO QUE OCUPE EL BOTON */
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background-color: royalblue;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  padding: 0.8rem 1.2rem;
+  cursor: pointer;
+}
+
+.btn-large {
+  display: block;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem 0;
+}
